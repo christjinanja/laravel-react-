@@ -34,7 +34,7 @@ export default function Login() {
     <div className="login-signup-form animated fadeInDown">
       <div className="form">
         <form onSubmit={onSubmit}>
-          <h1 className="title">Login into your account</h1>
+          <h1 className="title">Connexion à votre compte</h1>
 
           {message &&
             <div className="alert">
@@ -43,9 +43,9 @@ export default function Login() {
           }
 
           <input ref={emailRef} type="email" placeholder="Email"/>
-          <input ref={passwordRef} type="password" placeholder="Password"/>
-          <button className="btn btn-block">Login</button>
-          <p className="message">Not registered? <Link to="/signup">Create an account</Link></p>
+          <input ref={passwordRef} type="password" placeholder="mot de pass"/>
+          <button className="btn btn-block">Se connecter</button>
+          <p className="message">Pas encore inscrit ?  <Link to="/signup">Créer un compte</Link></p>
         </form>
       </div>
     </div>

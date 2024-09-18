@@ -36,7 +36,7 @@ export default function UserForm() {
     if (user.id) {
       axiosClient.put(`/users/${user.id}`, user)
         .then(() => {
-          setNotification('User was successfully updated')
+          setNotification('L\'utilisateur a été mis à jour avec succès')
           navigate('/users')
         })
         .catch(err => {
@@ -46,9 +46,10 @@ export default function UserForm() {
           }
         })
     } else {
+      // Création d'un nouvel utilisateur
       axiosClient.post('/users', user)
         .then(() => {
-          setNotification('User was successfully created')
+          setNotification('L\'utilisateur a été créé avec succès')
           navigate('/users')
         })
         .catch(err => {
@@ -62,8 +63,8 @@ export default function UserForm() {
 
   return (
     <>
-      {user.id && <h1>Update User: {user.name}</h1>}
-      {!user.id && <h1>New User</h1>}
+      {user.id && <h1>Modifier l'utilisateur: {user.name}</h1>}
+      {!user.id && <h1>Nouvel utilisateur</h1>}
       <div className="card animated fadeInDown">
         {loading && (
           <div className="text-center">
@@ -79,11 +80,11 @@ export default function UserForm() {
         }
         {!loading && (
           <form onSubmit={onSubmit}>
-            <input value={user.name} onChange={ev => setUser({...user, name: ev.target.value})} placeholder="Name"/>
+            <input value={user.name} onChange={ev => setUser({...user, name: ev.target.value})} placeholder="Nom"/>
             <input value={user.email} onChange={ev => setUser({...user, email: ev.target.value})} placeholder="Email"/>
-            <input type="password" onChange={ev => setUser({...user, password: ev.target.value})} placeholder="Password"/>
-            <input type="password" onChange={ev => setUser({...user, password_confirmation: ev.target.value})} placeholder="Password Confirmation"/>
-            <button className="btn">Save</button>
+            <input type="password" onChange={ev => setUser({...user, password: ev.target.value})} placeholder="Mot de passe"/>
+            <input type="password" onChange={ev => setUser({...user, password_confirmation: ev.target.value})} placeholder="Confirmation du mot de passe"/>
+            <button className="btn">Sauvegarder</button>
           </form>
         )}
       </div>

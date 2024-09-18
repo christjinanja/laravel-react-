@@ -42,7 +42,7 @@ input:focus {
 .btn-delete {
     font-family: "Roboto", sans-serif;
     outline: 0;
-    background: #5b08a7;
+    background: #3d45e6;
     border: 0;
     text-decoration: none;
     padding: 15px;
@@ -85,7 +85,7 @@ input:focus {
 .btn:hover,
 .btn:active,
 .btn:focus {
-    background: #5b08a7;
+    background: #24da9a;
 }
 
 .text-center {
@@ -121,7 +121,7 @@ table > tbody > tr > td {
 
 .alert {
     padding: 1rem;
-    background-color: #ff4040;
+    background-color: #865454;
     color: white;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
@@ -151,7 +151,7 @@ table > tbody > tr > td {
     width: 360px;
     position: relative;
     z-index: 1;
-    background: #FFFFFF;
+    background: #1583b7;
     max-width: 360px;
     padding: 34px;
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
@@ -208,7 +208,7 @@ table > tbody > tr > td {
 #defaultLayout header {
     height: 80px;
     padding: 2rem 3rem;
-    background-color: white;
+    background-color: rgb(13, 8, 8);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: space-between;
