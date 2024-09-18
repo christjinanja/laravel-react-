@@ -16,15 +16,15 @@ body {
     margin: 0;
     padding: 0;
     font-size: 14px;
-    color: #212121;
-    background-color: #f6f6f6;
+    color: #060606;
+    background-color: #91d5d77c;
 }
 
 input {
     outline: 0;
     background: #ffffff;
     width: 100%;
-    border: 2px solid #e6e6e6;
+    border: 2px solid #efe7e7;
     margin: 0 0 15px;
     padding: 15px;
     box-sizing: border-box;
@@ -46,7 +46,7 @@ input:focus {
     border: 0;
     text-decoration: none;
     padding: 15px;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 16px;
     -webkit-transition: all 0.3 ease;
     transition: all 0.3 ease;
@@ -74,12 +74,12 @@ input:focus {
 .btn-logout {
     text-decoration: none;
     padding: 0.75rem 1.5rem;
-    color: #212121;
+    color: #0e0d0d;
     transition: all 0.3s;
     border-radius: 6px;
 }
 .btn-logout:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(142, 139, 139, 0.996);
 }
 
 .btn:hover,
@@ -111,9 +111,9 @@ table > tbody > tr > td {
 }
 
 .card {
-    background-color: #FFF;
+    background-color: #ffffff;
     border-radius: 0.5rem;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 3px rgb(61, 59, 59);
     padding: 1.25rem 1.5rem;
     margin-bottom: 1rem;
     margin-top: 0.5rem;
@@ -154,7 +154,7 @@ table > tbody > tr > td {
     background: #1583b7;
     max-width: 360px;
     padding: 34px;
-    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 2px 0 rgba(138, 138, 138, 0.66);
 }
 
 .login-signup-form .title {
@@ -165,7 +165,7 @@ table > tbody > tr > td {
 
 .login-signup-form .form .message {
     margin: 15px 0 0;
-    color: #b3b3b3;
+    color: #fae4e4;
     font-size: 16px;
     text-align: center;
 }
@@ -192,13 +192,13 @@ table > tbody > tr > td {
     display: block;
     padding: 0.75rem 1rem;
     border-radius: 6px;
-    color: white;
+    color: rgb(255, 252, 252);
     text-decoration: none;
     transition: all 0.2s;
 }
 
 #defaultLayout aside > a:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(88, 84, 84, 0.73);
 }
 
 #defaultLayout .content {
@@ -208,8 +208,8 @@ table > tbody > tr > td {
 #defaultLayout header {
     height: 80px;
     padding: 2rem 3rem;
-    background-color: rgb(13, 8, 8);
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.682);
+    box-shadow: 1px 1px 2px rgba(255, 252, 252, 0.2);
     display: flex;
     justify-content: space-between;
     align-items: center;
